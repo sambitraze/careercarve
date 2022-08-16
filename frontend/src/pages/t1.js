@@ -1,5 +1,20 @@
 function T1() {
-    return ( <>T1</> );
+    return (<form>
+        <h3>T1</h3>
+        <div className="mb-3">
+            <label>File Upload</label>
+            <input
+                type="file"
+                className="form-control"
+                placeholder="Choose File"
+            />
+        </div>
+        <div className="d-grid">
+            <button type="submit" className="btn btn-primary">
+                Upload
+            </button>
+        </div>
+    </form>);
 }
 
 export default T1;
