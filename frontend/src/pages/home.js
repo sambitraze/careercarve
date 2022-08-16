@@ -34,8 +34,8 @@ function Home() {
                                 <h4 className="card-title">Trainings</h4>
                             </div>
                             <div className="card-body">
-                                <p className="card-text">T1 <a href="/sign-up">Visit</a></p>
-                                <p className="card-text">T2 <a href="/sign-up">Visit</a></p>
+                                <p className="card-text">T1 <a href="/t1">Visit</a></p>
+                                <p className="card-text">T2 <a href="/t2">Visit</a></p>
                                 
                             </div>
                         </div>

@@ -5,6 +5,9 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 import Login from './pages/login'
 import SignUp from './pages/signup'
 import Home from './pages/home'
+import T1 from './pages/t1'
+import T2 from './pages/t2'
+import T3 from './pages/t3'
 function App() {
   return (
     <Router>
@@ -15,7 +18,11 @@ function App() {
                 CarrerCarve
             </Link>
             <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
-              <ul className="navbar-nav ml-auto">
+              <ul className="navbar-nav ml-auto"><li className="nav-item">
+                  <Link className="nav-link" to={'/'}>
+                    Home
+                  </Link>
+                </li>
                 <li className="nav-item">
                   <Link className="nav-link" to={'/sign-in'}>
                     Login
@@ -36,6 +43,9 @@ function App() {
               <Route exact path="/" element={<Home />} />
               <Route path="/sign-in" element={<Login />} />
               <Route path="/sign-up" element={<SignUp />} />
+              <Route path="/t1" element={<T1/>} />
+              <Route path="/t2" element={<T2 />} />
+              <Route path="/t3" element={<T3 />} />
             </Routes>
           </div>
         </div>
